@@ -5,10 +5,9 @@ cmd="/home3/chenchen/research/maison2/egs/VB/slurm.pl --quiet --nodelist=node01"
 
 export CUDA_VISIBLE_DEVICES=0,1
 
-source activate cutmodel
+source activate audio
 
 #python -m visdom.server
 
-$cmd log/checkpoints_rats_10min_1h.log \
-CUDA_VISIBLE_DEVICES=0,1 \
-python train.py --dataroot ./datasets/rats_10min_1h --name rats_10min_1h --CUT_mode CUT --checkpoints_dir checkpoints_rats_10min_1h
+$cmd log/xx.log \
+python train.py --dataroot ./datasets/xx --name xx --CUT_mode CUT --checkpoints_dir checkpoints_xx
